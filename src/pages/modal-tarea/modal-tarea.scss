@@ -1,0 +1,22 @@
+page-modal-tarea {
+    .background{
+        background:  linear-gradient(white,#3b5998 200%);
+    }
+
+     .item{
+        margin-bottom: 10px; 
+         background:#fff;
+         border: medium none;
+
+         .text-input{
+             color: #3b5998;
+         }
+
+         input::-moz-placeholder{
+             color: #fff !important;
+         }
+         *::-webkit-input-placeholder{
+             color: #fff !important;
+         }
+     }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "AgendApp",
+  "app_id": "66133998",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

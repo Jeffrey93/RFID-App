@@ -1,0 +1,49 @@
+
+page-menu{
+.card-background-page {
+    
+  ion-card {
+      border-radius: 0.625em;
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color:  color($colors, facebook);
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: color($colors, primary);
+  }
+
+  //oscuridad tras el modal
+  ion-page.modal {
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+}
+
+}
+
+   ion-card.card{
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    a,p,ion-card-header.card-header{
+        color: #fff !important;
+    }
+
+    
+}
+.background{
+        background:  linear-gradient(white,#3b5998 200%);
+    }

@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tarea</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="background">
+  <ion-card large class="background">
+ 
+  <ion-card-content>
+    <ion-card-title center>
+       <ion-item><p>
+      {{tarea.fecha}}
+    </p></ion-item>
+      <ion-item>
+          {{tarea.titulo}}
+      </ion-item>
+      
+      </ion-card-title>
+      <ion-item text-wrap > 
+               <p>{{tarea.descripcion}}</p> 
+      </ion-item>
+         
+
+<ion-item >
+       <ion-label><p>Responsables:</p> </ion-label>
+    <ion-select [(ngModel)]="toppings"  >
+      <ion-option value="bacon" selected="true">Peter</ion-option>
+      <ion-option value="olives" selected="true">Andrea</ion-option>
+      <ion-option value="xcheese" selected="true">Roberto</ion-option>
+
+    </ion-select>
+    </ion-item>
+  <ion-row >
+    <ion-col>
+      <button ion-button  small color="primary">Editar</button>
+    </ion-col>
+  
+  <ion-col tex-right>
+      <button ion-button  small color="danger" icon-left><ion-icon name="trash"></ion-icon> Eliminar</button>
+    </ion-col>
+  </ion-row>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

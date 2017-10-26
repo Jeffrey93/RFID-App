@@ -1,0 +1,29 @@
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+  <!--<ion-badge item-end>Login</ion-badge>-->
+    </ion-card-header>
+    <ion-card-content>
+      
+      
+      <ion-list >
+        
+        <ion-item >
+          <ion-input type="text" placeholder="Usuario"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-input type="password" placeholder="Contraseña"></ion-input>
+        </ion-item>
+
+      <a>¿Olvidó su contraseña?</a>
+      <button ion-button block outline color ="light" (click)="pushPage()">Iniciar sesión</button>
+      <p>ó</p>
+      <button ion-button block color="facebook">
+        <ion-icon name="logo-facebook"></ion-icon> iniciar sesión con Facebook.
+        </button>
+          </ion-list>
+  <!--<button ion-button clear full color="light" class="bottom">No tengo una cuenta Registrarse</button>-->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

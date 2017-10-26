@@ -1,0 +1,23 @@
+page-tareas-finalizadas {
+   .background{
+        background:  linear-gradient(white,#3b5998 200%);
+    }
+     .item{
+        margin-bottom: 10px; 
+         background: rgba(198, 212, 239, 0.1);
+         border: medium none;
+
+         .text-input{
+             color: #fff;
+         }
+
+         input::-moz-placeholder{
+             color: #fff !important;
+         }
+         *::-webkit-input-placeholder{
+             color: #fff !important;
+         }
+        
+         
+    }
+}

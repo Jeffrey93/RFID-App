@@ -1,0 +1,27 @@
+<ion-header class="background">
+
+  <ion-navbar>
+    <ion-title>Agregar tarea</ion-title>
+       <ion-buttons end>
+      <button ion-button icon-only (click)="cerrarModal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+  <form >
+      <ion-item>
+        <ion-label>Tarea</ion-label>
+        <ion-input type="text" [(ngModel)]="tarea.titulo" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Descripción</ion-label>
+        <ion-textarea [(ngModel)]="tarea.descripcion" name="description"></ion-textarea>
+      </ion-item>
+      <button ion-button  block (click)="AgregarTarea(tarea)">¡Agregar tarea!</button>
+    </form>
+</ion-content>

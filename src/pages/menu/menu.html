@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+    
+      <ion-title class="">Tareas</ion-title>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    
+    </button>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="background" >
+  <ion-card card-md (click)="openModal();">
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon ios="ios-create" md="md-create" padding></ion-icon>
+      Nueva Tarea
+      </ion-card-title>
+  
+  </ion-card-content>
+</ion-card>
+<ion-card card-md (click)="irTareasPendientes();">
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon ios="ios-clipboard" md="md-clipboard" padding></ion-icon>
+      Tareas Pendientes
+      </ion-card-title>
+  
+  </ion-card-content>
+</ion-card>
+<ion-card card-md (click)="irTareasFinalizadas();">
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon ios="ios-done-all" md="md-done-all" padding></ion-icon>
+      Tareas Finalizadas
+      </ion-card-title>
+  
+  </ion-card-content>
+</ion-card>
+  
+
+  
+
+</ion-content>

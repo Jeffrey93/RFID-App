@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+     <button ion-button menuToggle left>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-title>Tareas pendientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  >
+  <ion-content class="background">
+    <ion-searchbar placeholder="Buscar tarea">
+</ion-searchbar>
+  <ion-list>
+  <ion-item *ngFor="let tarea of listaTareas; let i=index " class="background">
+  
+    <ion-thumbnail item-start>
+      <img src="../assets/logo.png">
+    </ion-thumbnail>
+    <h2>{{tarea.titulo}}</h2>
+    <p>{{tarea.descripcion}}</p>
+   
+    <button ion-button  item-end  (click)="deleteTarea(i,tarea);">Finalizada</button>
+     <button ion-button  item-end  (click)="detalleTarea(tarea);">Ver</button> 
+  </ion-item>
+
+  
+</ion-list>  
+
+</ion-content>
+
+</ion-content>
+
+
