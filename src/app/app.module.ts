@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { QRScanner } from '@ionic-native/qr-scanner';
 
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -48,7 +49,9 @@ import {DetalleTareaPage} from '../pages/detalle-tarea/detalle-tarea';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    TareasProvider
+    TareasProvider,
+    QRScanner
+
   ]
 })
 export class AppModule {}
