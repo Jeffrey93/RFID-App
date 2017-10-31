@@ -69,7 +69,7 @@ export class TareasProvider {
     
   }*/
   
- 
+
 
   private catchError (error : Response | any){
     console.log(error);
